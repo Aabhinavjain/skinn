@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skinn-web-app</title>
+ 
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/font-awesome.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="#about"><img src="{{ url_for('static',filename='img/logo (2).jpg') }}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#banner">Home</a></li>
+                <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#howwefunction">Functioning </a></li>
+                <li class=""><a href="#predict">Predict</a></li>
+                <li class=""><a href="#team">Our Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            
+            <div class="banner-logo text-center">
+              <img src="{{ url_for('static',filename='img/logo (2).jpg') }}" class="img-responsive">
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">What We Do!</h1>
+              <p> Skinn constructively uses a machine learning model to <br>process images of skin lesions, patches, etc. provided by the user and <br> accurately predicts the exact nature of the infection and along with its name.</p>
+              <a href="#predict" class="btn btn-appoint">Start Predicting</a>
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="#howwefunction"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  
+
+  <!--cta-->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title">
+            <h2 class="head-title lg-line">The Skinn <br>Team</h2>
+            <hr class="botm-line">
+            <p class="sec-para">We are a group of students working on this minor project. Our aim here is to use CNN (convolution neural network model) of machine learning to predict skin diseases</p>
+            <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3> What we do?</h3>
+                <p>Predict your skin infections. Provide you with a detailed report on your infection. Show you a list of hospitals that have a specialty in that particular disease.</p>
+              </div>
+            </div>
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>What we don’t?</h3>
+                <p>Give you treatments and medicines for a specific infection. Give you treatments and medicines for a specific infection. Predict infections that are very severe and have reached a level that needs immediate medical attention. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ about-->
+  <!--Function-->
+  <section id="howwefunction" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">How we Function</h2>
+          <hr class="botm-line">
+          <p>Skinn constructively uses CNN machine learning model to process imagees and predict the disease you are suffering with ?</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-camera"></i>
+            </div>
+            <div class="icon-info">
+              <h4>1. Click a Pic</h4>
+              <p>Take a pic of infected area of your skin.<br><br></p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-upload"></i>
+            </div>
+            <div class="icon-info">
+              <h4>2. Upload to the website</h4>
+              <p>Upload the image in the upload image dialog box in the predict section of the website </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-file-text"></i>
+            </div>
+            <div class="icon-info">
+              <h4>3. Get final Results</h4>
+              <p>Click predict and we will do the rest of the work for you and give you the results.</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-medkit"></i>
+            </div>
+            <div class="icon-info">
+              <h4>4. Take the report .</h4>
+              <p>After getting the reports you can consult the doctor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/function-->
+  <!--testimonial-->
+  <section id="predict" class="section-padding" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Start Predicting!</h2>
+          <hr class="botm-line">
+        </div>
+        <br><br><br><br>
+        <div class="thumbnail" >
+          
+                    <div class="Neon-input-text">
+
+                      <form action = "/predict" method = "POST" enctype = "multipart/form-data">
+                        <input type = "file" name = "file" />                    </div>
+                    
+                    <input type = "submit" value="Get Result" class="btn btn-appoint"></input>
+                  </form>
+                  </div>
+                </div>
+            </div>
+       
+  </section>
+  <!--/ testimonial-->
+  <!--result-->
+  <section id="result" class="section-padding" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Result: </h2>
+          <hr class="botm-line">
+          <label id="disease-predicted" onchange="label_to_name()">{{result}}</label>
+
+        </div>
+        <br><br><br><br>
+      </div>
+    </div>
+  </section>
+ 
+    
+ 
+ 
+  <!--result-->
+  <!-- team-->
+  <section id="team" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Meet Our team!</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/DrKushalKanwar.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Dr Kushal Kanwar</h3>
+              <p>Project Guide</p>
+              <ul class="list-inline">
+                <li><a href="mailto: kushalneo@gmail.com"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/doctor2.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Abhinav Jain</h3>
+              <p>Team Member</p>
+              <ul class="list-inline">
+                <li><a href="https://github.com/aabhinavjain"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aabhinav-jain//"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="mailto: 201128@juitsolan.in"><i class=" fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/doctor3.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Pranav Agrawal</h3>
+              <p>Team Member</p>
+              <ul class="list-inline">
+                <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in//"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="mailto: 201128@juitsolan.in"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ doctor team-->
+  
+  
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <p>Students working on this minor project. This is a web applications where we have used CNN (convolution neural network model) of machine learning  to predict skin diseases </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info">
+                <li><a href="#about"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="#predict"><i class="fa fa-circle"></i>Predict</a></li>
+                <li><a href="#team"><i class="fa fa-circle"></i>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            ©2023  Copyright Skinn team. All Rights Reserved
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+ 
+
+</body>
+
+</html>
